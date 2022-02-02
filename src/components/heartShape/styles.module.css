@@ -1,0 +1,37 @@
+/* .heartCss {
+  display: inline-block;
+  width: 200px;
+  aspect-ratio: 1;
+  border-image: radial-gradient(blue 69%, #0000 70%) 84.5% fill/100%;
+  clip-path: polygon(-41% 0, 50% 91%, 141% 0);
+} */
+
+.heartCss {
+  position: relative;
+  width: 100px;
+  height: 90px;
+  margin-top: 10px;
+}
+
+.heartCss::before,
+.heartCss::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 52px;
+  height: 80px;
+  border-radius: 50px 50px 0 0;
+  background: red;
+}
+
+.heartCss::before {
+  left: 50px;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+}
+
+.heartCss::after {
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+}

@@ -1,0 +1,65 @@
+.fifthHeader {
+  padding-top: 40px;
+  /* padding-left: 90px; */
+  height: 900px;
+  /* height: 100%; */
+  width: 100%;
+  background: linear-gradient(
+    318.12deg,
+    #ffffff -16.7%,
+    #ffd8de -7.16%,
+    #ff99a8 10.11%,
+    #ff677e 25.83%,
+    #ff435f 39.53%,
+    #ff2e4c 50.63%,
+    #ff2646 57.77%
+  );
+}
+
+.fieldTitle {
+  font-family: IBM Plex Sans, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 19px;
+  line-height: 25px;
+  /* identical to box height */
+
+  color: #1a1a1a;
+  background: white !important;
+  border: none;
+}
+
+.inputContainer {
+  width: 500px;
+  height: 60px;
+  margin-bottom: 20px;
+}
+
+.fieldsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.iconTitle {
+  background-color: white;
+  border-radius: 0;
+  border: none;
+}
+
+.fieldLabel {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 31px;
+  line-height: 36px;
+
+  color: #ffffff;
+}
+
+.fieldContainer {
+  flex-direction: column;
+  /* padding-top: 30px; */
+  padding-bottom: 20px;
+}

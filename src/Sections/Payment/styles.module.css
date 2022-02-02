@@ -1,0 +1,17 @@
+.fourthHeader {
+  padding-top: 40px;
+  /* padding-left: 90px; */
+  height: 900px;
+  /* height: 100%; */
+  width: 100%;
+  background: linear-gradient(
+    318.12deg,
+    #ffffff -16.7%,
+    #ffd8de -7.16%,
+    #ff99a8 10.11%,
+    #ff677e 25.83%,
+    #ff435f 39.53%,
+    #ff2e4c 50.63%,
+    #ff2646 57.77%
+  );
+}

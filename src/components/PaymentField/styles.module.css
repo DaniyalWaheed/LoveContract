@@ -1,0 +1,89 @@
+.payemntContainer {
+  width: 550px;
+  height: 70px;
+  background: white;
+  align-items: flex-start;
+  display: flex;
+}
+
+.paymentIcon {
+  position: relative;
+  top: 20px;
+  left: 20px;
+}
+
+.paymentTitle {
+  font-family: IBM Plex Sans, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 27px;
+  line-height: 35px;
+  /* identical to box height */
+
+  color: #ff2646;
+
+  padding-left: 45px;
+  margin-top: 15px;
+}
+
+.customRadioFeild [type="radio"]:checked,
+.customRadioFeild [type="radio"]:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+.customRadioFeild [type="radio"]:checked + label,
+.customRadioFeild [type="radio"]:not(:checked) + label {
+  position: relative;
+  padding-left: 50px;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 29px;
+
+  color: #ffffff;
+  /* color: blue; */
+}
+.customRadioFeild [type="radio"]:checked + label:before,
+.customRadioFeild [type="radio"]:not(:checked) + label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 25px;
+  height: 25px;
+  border: 3px solid #ff2646;
+  border-radius: 100%;
+  background: inherit;
+}
+.customRadioFeild [type="radio"]:checked + label:after,
+.customRadioFeild [type="radio"]:not(:checked) + label:after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background: #fff;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.customRadioFeild [type="radio"]:not(:checked) + label:after {
+  opacity: 0;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+.customRadioFeild [type="radio"]:checked + label:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.radioParent {
+  position: relative;
+  left: 220px;
+  top: 12px;
+}
